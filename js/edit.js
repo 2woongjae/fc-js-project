@@ -111,7 +111,7 @@ function render(book) {
   urlElement.value = book.url;
 
   const form = document.querySelector('#form-edit-book');
-  form.addEventListener('click', async event => {
+  form.addEventListener('submit', async event => {
     event.preventDefault();
     event.stopPropagation();
     event.target.classList.add('was-validated');
